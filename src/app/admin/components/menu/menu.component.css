@@ -1,0 +1,85 @@
+/* Style général du sidebar */
+.sidebar {
+
+  background: linear-gradient(145deg, #ffffff, #f8f9fa);
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Style de l'en-tête du sidebar */
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar-header h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-header p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Style des liens */
+.sidebar .nav-link {
+  color: #444;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar .nav-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.sidebar .nav-link:hover::before {
+  width: 100%;
+}
+
+/* Style des icônes */
+.sidebar .nav-link i {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Effet de survol sur les liens */
+.sidebar .nav-link:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .nav-link:hover i {
+  color: #007bff;
+}
+
+/* Style du lien actif */
+.sidebar .nav-link.active {
+  background-color: #007bff;
+  color: #fff;
+  box-shadow: 2px 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+.sidebar .nav-link.active i {
+  color: #fff;
+}

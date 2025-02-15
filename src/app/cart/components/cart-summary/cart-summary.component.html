@@ -1,0 +1,40 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Résumé du panier</h2>
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th class="text-center">Produit</th>
+          <th class="text-center">Prix unitaire</th>
+          <th class="text-center">Quantité</th>
+          <th class="text-center">Total</th>
+          <th class="text-center">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of cartItems">
+          <td class="align-middle">{{ item.product.name }}</td>
+          <td class="align-middle text-center">{{ item.product.price | number:'1.2-2' }} DT</td>
+          <td class="align-middle">
+            <input
+              type="number"
+              class="form-control form-control-sm"
+              [value]="item.quantity"
+              (change)="updateQuantity(item.product.id, $event)"
+              min="1"
+            />
+          </td>
+          <td class="align-middle text-center">{{ item.product.price * item.quantity |  number:'1.2-2' }} DT</td>
+          <td class="align-middle text-center">
+            <button class="btn btn-danger btn-sm" (click)="removeItem(item.product.id)">
+              <i class="fas fa-trash"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h4 class="text-end mt-4">Total : {{ total | number:'1.2-2' }} DT</h4>
+
+
+</div>

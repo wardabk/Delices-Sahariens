@@ -1,0 +1,44 @@
+/* Style général des cartes de statistiques */
+.statistics-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.statistics-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style du titre de la carte */
+.statistics-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Style du texte de la carte */
+.statistics-card .card-text {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Style des icônes */
+.statistics-card .card-icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+/* Style spécifique pour la carte des produits */
+.statistics-card.products {
+  background-color: #f8f9fa;
+}
+
+/* Style spécifique pour la carte des commandes */
+.statistics-card.orders {
+  background-color: #f8f9fa;
+}

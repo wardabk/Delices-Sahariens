@@ -1,0 +1,56 @@
+/* .pied{
+  background-color: rgba(0, 0, 0, 0.05);
+} */
+
+#footer .border-bottom {
+  border-color: #ddd !important; /* Couleur de la bordure */
+}
+
+#footer .text-reset {
+  color: #333; /* Couleur des icônes */
+  transition: color 0.3s ease;
+}
+
+#footer .text-reset:hover {
+  color: #ffc107 !important; /* Couleur au survol */
+}
+
+/* Section des liens */
+.footer-links h6 {
+  color: #333; /* Couleur des titres */
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links p {
+  color: #555; /* Couleur du texte */
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer-links a {
+  color: #333; /* Couleur des liens */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffc107 !important; /* Couleur au survol */
+}
+
+/* Section du copyright */
+#footer .text-center {
+  background-color: #e9ecef; /* Fond légèrement plus foncé */
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+#footer .text-center a {
+  color: #333; /* Couleur du lien */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#footer .text-center a:hover {
+  color: #ffc107 !important; /* Couleur au survol */
+}

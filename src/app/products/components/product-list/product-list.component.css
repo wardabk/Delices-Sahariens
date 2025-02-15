@@ -1,0 +1,42 @@
+.card {
+  height: 100%; 
+}
+
+.card-img-top {
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 0.75rem;
+}
+
+.card-title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+}
+
+
+
+/* Style pour le prix */
+.product-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 1rem;
+}
+
+
+.product-price:hover {
+  color: #218838;
+}

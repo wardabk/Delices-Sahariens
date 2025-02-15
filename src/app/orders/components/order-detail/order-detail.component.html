@@ -1,0 +1,11 @@
+<div class="order-detail">
+  <h3>Détails de la commande #{{ orderDetails?.id }}</h3>
+  <p><strong>Client :</strong> {{ orderDetails?.customer }}</p>
+  <ul>
+    <li *ngFor="let item of orderDetails?.items">
+      {{ item.product }} - {{ item.quantity }} x {{ item.price }} TND
+    </li>
+  </ul>
+  <p><strong>Total : </strong>{{ orderDetails?.total }} TND</p>
+</div>
+

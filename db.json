@@ -1,0 +1,110 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Dattes Deglet Nour",
+      "description": "Une variété de dattes tunisiennes de qualité supérieure",
+      "price": 15,
+      "weight": 1,
+      "origin": "Tunisie",
+      "stock": 250,
+      "imageUrl": "assets/img/dagla.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Dattes Allig",
+      "description": "Des dattes douces et charnues",
+      "price": 8,
+      "weight": 1,
+      "origin": "Tunisie",
+      "stock": 100,
+      "imageUrl": "assets/img/allig dattes.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Sucre de dattes",
+      "description": "Un sucre naturel extrait des dattes",
+      "price": 5,
+      "weight": 1,
+      "origin": "Tunisie",
+      "stock": 150,
+      "imageUrl": "assets/img/sucre dattes.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Café au noyaux de dattes",
+      "description": "Un café original fabriqué à partir de noyaux de dattes",
+      "price": 6,
+      "weight": 1,
+      "origin": "Tunisie",
+      "stock": 50,
+      "imageUrl": "assets/img/cafeDattes.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Pâte de dattes",
+      "description": "Une pâte sucrée et nutritive à base de dattes",
+      "price": 5,
+      "weight": 1,
+      "origin": "Tunisie",
+      "stock": 50,
+      "imageUrl": "assets/img/pate dattes.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Dattes farcies",
+      "description": "Des dattes farcies avec des noix ou des amandes",
+      "price": 30,
+      "weight": 1,
+      "origin": "Tunisie",
+      "stock": 50,
+      "imageUrl": "assets/img/dattes farcie3.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Dattes fourrées",
+      "description": "Des dattes remplies de chocolat ou de fruits secs",
+      "price": 20,
+      "weight": 1,
+      "origin": "Tunisie",
+      "stock": 50,
+      "imageUrl": "assets/img/dattes fourrés.png"
+    },
+    {
+      "id": "8",
+      "name": "Sirop de dattes",
+      "description": "Un sirop sucré fabriqué à partir de dattes",
+      "price": 15,
+      "weight": 1,
+      "origin": "Tunisie",
+      "stock": 50,
+      "imageUrl": "assets/img/sirop de dattes.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Boule aux fruits secs",
+      "description": "Une délicieuse boulette d'énergie à base de dattes et de fruits secs",
+      "price": 25,
+      "weight": 1,
+      "origin": "Tunisie",
+      "stock": 50,
+      "imageUrl": "assets/img/boule aux fruits sec.jpeg"
+    }
+  ],
+  "cart": [
+    {
+      "id": "1",
+      "name": "Dattes Deglet Nour",
+      "price": 10,
+      "quantity": 2
+    }
+  ],
+  "orders": [
+    { "id": 1,
+    "name": "Dattes Deglet Nour",
+    "price": 10,
+    "quantity": 2,
+     "status": "en cours"
+     }
+  ]
+}

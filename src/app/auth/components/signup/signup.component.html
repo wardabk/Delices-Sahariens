@@ -1,0 +1,52 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6 col-lg-4">
+      <h2 class="text-center mb-4">S'inscrire</h2>
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="p-4 border rounded shadow-sm bg-light">
+        <div class="mb-3">
+          <input type="text" id="name" class="form-control" formControlName="name" placeholder="Nom" />
+          <div *ngIf="submitted && signupForm.get('name')?.invalid" class="text-danger small mt-1">
+            Le nom est requis.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <input type="text" id="adress" class="form-control" formControlName="adress" placeholder="Adresse" />
+          <div *ngIf="submitted && signupForm.get('adress')?.invalid" class="text-danger small mt-1">
+            L'adresse est requise.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <input type="email" id="email" class="form-control" formControlName="email" placeholder="Email" />
+          <div *ngIf="submitted && signupForm.get('email')?.invalid" class="text-danger small mt-1">
+            L'email est requis et doit être valide.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <input type="password" id="password" class="form-control" formControlName="password" placeholder="Mot de passe" />
+          <div *ngIf="submitted && signupForm.get('password')?.invalid" class="text-danger small mt-1">
+            Le mot de passe est requis.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <input type="password" id="confirmPassword" class="form-control" formControlName="confirmPassword" placeholder="Confirmer le mot de passe" />
+          <div *ngIf="submitted && signupForm.get('confirmPassword')?.invalid" class="text-danger small mt-1">
+            La confirmation du mot de passe est requise.
+          </div>
+          <div *ngIf="submitted && signupForm.get('confirmPassword')?.errors?.['mismatch']" class="text-danger small mt-1">
+            Les mots de passe ne correspondent pas.
+          </div>
+        </div>
+
+        <div class="mb-3 text-center">
+          <a routerLink="/login" class="text-decoration-none">Se connecter</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">S'inscrire</button>
+      </form>
+    </div>
+  </div>
+</div>

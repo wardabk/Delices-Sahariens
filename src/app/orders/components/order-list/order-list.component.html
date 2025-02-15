@@ -1,0 +1,10 @@
+<div class=" container mt-5 order-list">
+  <h3 class="text-center py-3">Liste des commandes</h3>
+  <ul>
+    <li *ngFor="let order of orders">
+      <a [routerLink]="['/order', order.id]">
+        Commande #{{ order.id }} - {{ order.customer }} - {{ order.total }} TND - {{ order.status }}
+      </a>
+    </li>
+  </ul>
+</div>

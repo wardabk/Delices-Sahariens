@@ -1,0 +1,74 @@
+
+.navbar {
+  background-color: #ffffff; /* Fond blanc */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Couleur des icônes */
+.navbar .fa-bars,
+.navbar .fa-shopping-cart,
+.navbar .fa-bell,
+.navbar .fa-user,
+.navbar .fa-magnifying-glass {
+  color: #333; /* Couleur des icônes */
+  transition: color 0.3s ease;
+}
+
+/* Effet de survol sur les icônes */
+.navbar .fa-bars:hover,
+.navbar .fa-shopping-cart:hover,
+.navbar .fa-bell:hover,
+.navbar .fa-user:hover,
+.navbar .fa-magnifying-glass:hover {
+  color: #007bff; /* Couleur au survol */
+}
+
+/* Style des liens de la navbar */
+.navbar-nav .nav-link {
+  color: #333; /* Couleur du texte */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #007bff; /* Couleur au survol et lien actif */
+}
+
+/* Style de la barre de recherche */
+.navbar .form-control {
+  border-radius: 20px; /* Bords arrondis */
+  border-color: #ddd; /* Couleur de la bordure */
+}
+
+.navbar .btn-outline-success {
+  border-radius: 20px; /* Bords arrondis */
+  border-color: #007bff; /* Couleur de la bordure */
+  color: #007bff; /* Couleur du texte */
+}
+
+.navbar .btn-outline-success:hover {
+  background-color: #007bff; /* Fond au survol */
+  color: #fff; /* Texte blanc au survol */
+}
+
+/* Style du badge de notification */
+.navbar .badge {
+  font-size: 0.75rem; /* Taille du badge */
+  padding: 0.25rem 0.5rem; /* Padding du badge */
+}
+
+/* Style du dropdown */
+.navbar .dropdown-menu {
+  border: none; /* Supprimer la bordure */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.navbar .dropdown-item {
+  color: #333; /* Couleur du texte */
+  transition: background-color 0.3s ease;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #f8f9fa; /* Fond au survol */
+}

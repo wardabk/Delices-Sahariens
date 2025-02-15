@@ -1,0 +1,47 @@
+
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+
+.table-hover tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+
+.form-control-sm {
+  width: 100%;
+}
+
+/* Style pour les écrans petits */
+@media (max-width: 768px) {
+  .table th, .table td {
+    padding: 0.5rem;
+  }
+
+  .btn-sm {
+    font-size: 0.75rem;
+  }
+
+  .form-control-sm {
+    width: 100%;
+  }
+
+
+  .col-description {
+    display: none;
+  }
+ 
+  .col-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

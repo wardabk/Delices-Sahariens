@@ -1,0 +1,10 @@
+<div class="container mt-4">
+  <h2>Checkout</h2>
+  <div *ngIf="cartItems.length > 0">
+    <p>Total à payer : {{ total | currency }}</p>
+    <button class="btn btn-success" (click)="confirmOrder()">Confirmer la commande</button>
+  </div>
+  <div *ngIf="cartItems.length === 0">
+    <p>Votre panier est vide.</p>
+  </div>
+</div>

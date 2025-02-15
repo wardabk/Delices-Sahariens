@@ -1,0 +1,33 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6 col-lg-4">
+      <h2 class="text-center mb-4">Connexion</h2>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="p-4 border rounded shadow-sm bg-light">
+        <div class="mb-3">
+          <input type="email" id="email" class="form-control" formControlName="email" placeholder="Email" />
+          <div *ngIf="submitted && loginForm.get('email')?.invalid" class="text-danger small mt-1">
+            L'email est requis et doit être valide.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <input type="password" id="password" class="form-control" formControlName="password" placeholder="Mot de passe" />
+          <div *ngIf="submitted && loginForm.get('password')?.invalid" class="text-danger small mt-1">
+            Le mot de passe est requis.
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between mb-3">
+          <div>
+            <a routerLink="/forgot-password" class="text-decoration-none">Mot de passe oublié ?</a>
+          </div>
+          <div>
+            <a routerLink="/signup" class="text-decoration-none">S'inscrire</a>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Se connecter</button>
+      </form>
+    </div>
+  </div>
+</div>
