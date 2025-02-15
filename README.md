@@ -1,27 +1,31 @@
-# ECommerceSite
+# Délices Sahariens - E-commerce des Dattes et Dérivés
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+Bienvenue sur le projet **Délices Sahariens** ! Ce projet vise à offrir une plateforme en ligne pour l'achat de dattes sahariennes et de leurs dérivés.
 
-## Development server
+## Description
+Délices Sahariens propose des dattes fraîches et des produits dérivés issus de la culture traditionnelle des oasis sahariennes. Nous nous engageons à fournir des produits naturels de la plus haute qualité, sans additifs ni conservateurs.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Fonctionnalités
+- **Authentification**
+- **Gestion des utilisateurs**
+- **Gestion des produits**
+- **Gestion des commandes**
+- **Gestion des tâches**
+- **Visualisation des statistiques de ventes**-
 
-## Code scaffolding
+### Technologies Utilisées
+- **Frontend** : *Angular* 16
+- **Backend (simulé)** : *JSON Server*
+- **Containerisation** : *Docker* 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Contributeurs
+-*Warda Boubaker* 
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+##### Build Docker Image
+-** docker build -t wardabk/delices-sahariens .
+### Push Docker Image
+docker push wardabk/delices-sahariens 
+ Pull Docker Image
+docker pull wardabk/delices-sahariens
+ Run Docker Image
+docker run -p 4200:4200 -p 3000:3000 wardabk/delices-sahariens
