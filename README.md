@@ -22,7 +22,7 @@ Délices Sahariens propose des dattes fraîches et des produits dérivés issus 
 -*Warda Boubaker* 
 
 ### Build Docker Image
-- **docker build -t wardabk/delices-sahariens** 
+- **docker build -t wardabk/delices-sahariens .** 
 
 ### Push Docker Image
 - **docker push wardabk/delices-sahariens** 
